@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+<!--    <bean id="person" class="com.guo.domain.Person">-->
+<!--        <constructor-arg value="jack"/>-->
+<!--        <constructor-arg value="18"/>-->
+<!--    </bean>-->
+<!--    <bean id="userService" class="com.guo.service.impl.UserServiceImpl" init-method="init" destroy-method="dealloc">-->
+<!--        <property name="age" value="20"/>-->
+<!--    </bean>-->
+<!--    <bean id="userService" class="com.guo.proxy.UserServiceProxy">-->
+<!--        <property name="target">-->
+<!--            <bean class="com.guo.service.impl.UserServiceImpl"/>-->
+<!--        </property>-->
+<!--    </bean>-->
+    <!-- 创建 -->
+<!--    <bean class="com.guo.processor.MyProcessor"/>-->
+
+    <!-- jdk动态代理 -->
+    <bean id="personService" class="com.guo.service.impl.PersonServiceImpl"/>
+</beans>
